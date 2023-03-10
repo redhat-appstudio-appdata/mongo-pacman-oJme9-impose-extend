@@ -25,7 +25,7 @@ spec:
       containers:
       - env:
         - name: MONGO_SERVICE_HOST
-        image: quay.io/redhat-appstudio/user-workload:jduimovich-tenant-pacman-frontend
+        image: quay.io/redhat-appstudio/user-workload@sha256:d4ad2f479781d87179676c44a1fbb449fb11035d642a39b22661adb33e5a1a10
         imagePullPolicy: Always
         name: container-image
         ports:
