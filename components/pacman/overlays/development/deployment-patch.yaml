@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: pacman
+  namespace: jduimovich-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:d4ad2f479781d87179676c44a1fbb449fb11035d642a39b22661adb33e5a1a10
+        name: container-image
+        resources: {}
+status: {}
